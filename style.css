@@ -1,0 +1,94 @@
+* {
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+  font-size: 1rem;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+  color: white;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: .1rem;
+}
+
+button:hover {
+  opacity: .8;
+}
+
+.flex {
+  display: flex;
+}
+
+.red { background-color: tomato; }
+.green {background-color: yellowgreen; }
+
+.modal {
+  position: absolute;
+  background-color: white;
+  border-radius: .5rem;
+  padding: 1rem;
+  box-shadow: 0 0 .8rem .5rem rgba(100, 100, 100, .1);
+}
+
+.inputs {
+  flex-direction: column;
+}
+
+.inputs > div {
+  display: inline-flex;
+  flex: 1 1 0;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+label {
+  font-size: 1.2rem;
+  margin-bottom: .2rem;
+}
+
+input, button { 
+  font-size: inherit;
+  font-family: inherit;
+}
+
+input {
+  width: 100%;
+  padding: .5rem .75rem;
+  border: 1px solid #ccc;
+  border-radius: .25rem; 
+  font-size: inherit;
+}
+
+.buttons button {
+  width: 100%;
+  padding: .8rem 1rem;
+  margin: .2rem 1rem;
+}
+
+.reset-btn {
+  background-color: red;
+  position: absolute;
+  border-radius: 1rem;
+  padding: 2rem .5rem;
+  box-shadow: 0 0 1rem .5rem rgba(0, 0, 0, .2);
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .inputs {
+    flex-direction: row;
+  }
+}
